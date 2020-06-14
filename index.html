@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Portfolio</title>
+    <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- JS libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+        <script src="baffle/baffle.min.js"></script>
+    
+    <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!--Viewport-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!--CSS style/Fonts-->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://use.fontawesome.com/b5f074d7a9.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Libre+Barcode+128+Text&family=Monofett&family=Merriweather:ital,wght@1,300&family=Bungee&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+<!--"LANDING"-->
+<section id="landing">
+    <div>
+        <p class="title">Hello, World;</p>
+        <h2 class="titleTxt">I AM <span class="name">Alexis Thomas</span></h2>
+    </div>
+    <div>
+        <h2 class="titleTxt">AND I AM A <span class="title">web developer</span></h2>
+    </div>
+    <div class="row">
+        <div class="col-xs-12" style="text-align:center;"></div>
+    </div>
+</section>
+<!--ABOUT-->
+<section id="about" class="showThis">
+    <div class="row" id="secTitle">
+        <div class="col-xs-12">
+            <h3 class="title">About</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12" id="aboutTxt">
+            <p class="name2">Alexis is the name and development is the game—and I play to win.</p>
+            <p>Unraveling spaghetti code? Delicious. Sitting down and combing through files for bugs? A fun hobby! I love doing my best to create the best code I can, incorporating something new with every project so I'm always learning. I can follow a wireframe or I can conjure up something on my own, either way figuring out how to get a page to look how I want is like a brain teaser. My personality is that of fun-loving but dedicated, I find enjoyment in little details while maintaining deadlines. Striving to be the best I can be and achieve the highest degree of quality possible.</p>
+            <p>Knowledge in <strong>HTML</strong>, <strong>CSS</strong>, <strong>Javascript</strong>, <strong>jQuery</strong>, <strong>JSON</strong>, <strong>PHP</strong>, and <strong>MySQL</strong>.</p>
+            <ul id="softSkills">
+                <li id="softTitle">Soft Skills:</li>
+                <li>Hard-worker</li>
+                <li>Driven</li>
+                <li>Visual Studio Code</li>
+                <li>Microsoft Office (Word, Excel, etc)</li>
+                <li>Computer knowledge (hardware and software)</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--PROJECTS-->
+<section id="projects" class="showThis">
+<div class="container-fluid">
+    <div class="row" id="secTitle">
+        <div class="col-xs-12">
+            <h3 class="title">Projects</h3><a href="AThomas_Resume.pdf" id="resume">View my Résumé</a>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-4" id="projCard">
+            <h4 id="projTitle">Apple Mock-Up</h4>
+            <p id="techs">HTML &#8226; CSS &#8226; Javascript</p>
+            <img src="img/apple.png"></img>
+            <p id="projDesc">A mock-up of an Apple site. This project is meant to show capability of building off of a wireframe.</p>
+            <p id="projLinks"><a href="projects/apple/apple.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i></a> <a href="https://github.com/ahthomas9/mockup"><i class="fa fa-code"></i></a></p>
+        </div>
+        <div class="col-sm-4" id="projCard">
+            <h4 id="projTitle">reminderapp</h4>
+            <p id="techs">Bootstrap &#8226; jQuery &#8226; JSON</p>
+            <img src="img/reminder.png"></img>
+            <p id="projDesc">A small app that lets you set, individually delete, and delete-all reminders. Uses JSON's localStorage to keep information between tabs.</p>
+            <p id="projLinks"><a href="projects/reminderapp/index.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i></a> <a href="https://github.com/ahthomas9/reminderapp"><i class="fa fa-code"></i></a>
+            </a></p>
+        </div>
+        <div class="col-sm-4" id="projCard">
+            <h4 id="projTitle">Tracker App</h4>
+            <p id="techs">Bootstrap &#8226; jQuery &#8226; PHP &#8226; MySQL</p>
+            <img src="img/tracker.png" ></img>
+            <p id="projDesc">A food/reaction tracker for those with autoimmune diseases such as eczema. Submits and presents data using POST and CRUD operations from a MySQL database.</p>
+            <p id="projLinks"><a href="projects/foodtracker/index.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i></a> <a href="https://github.com/ahthomas9/foodtracker"><i class="fa fa-code"></i></a></p>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+<!--CONTACT-->
+<section id="contact" class="showThis">
+<div class="container-fluid">
+    <div class="row" id="secTitle">
+        <div class="col-xs-12">
+            <h3 class="title">Contact Me</h3>
+        </div>
+        <div class="col-xs-12" id="conContent">
+            <form action="mailform.php" method="POST" enctype="text/plain">
+            <h4 id="conTitle">Name</h4>
+            <input type="text" name="name" id="name" placeholder="yourName;" rows="2">
+            <h4 id="conTitle">E-mail</h4>
+            <input type="text" name="mail" id="mail" placeholder="respondTo;" rows="2">
+            <h4 id="conTitle">What can I help you with?</h4> 
+            <textarea name="mailContent" id="mailContent" placeholder="emailContent;" rows="5"></textarea>
+            <div id="buttons">
+            <input type="submit" value="Get in contact!" id="submit">
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+</section>
+
+<section id="social">
+    <div class="col-xs-12 socialButtons">
+        <a href="https://github.com/ahthomas9" id="icons"><i class="fa fa-github-alt"></i></a>
+        <a href="https://www.linkedin.com/in/alexishthomas/" id="icons"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+        <a href="" id="icons"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    </div>
+</section>
+<!--JS INCLUDE-->
+<script src="js.js"></script>
+<?php
+if ($_POST["submit"]) {
+    $sender = filter_var($_POST['mail'], FILTER_SANITIZE_EMAIL);
+    $recipient = "alexishthomas@gmail.com";
+    $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
+    $subject = "Form Submitted";
+    $message = filter_var($_POST['mailContent'], FILTER_SANITIZE_STRING);
+    $headers = "From: " . $name . "<". $email .">\r\n";
+
+    if (mail($recipient, $subject, $message, $headers)) {
+        echo "Message accepted";
+    } else {
+        echo "Error: Message not accepted";
+    }
+}
+?>
+</body>
+</html>

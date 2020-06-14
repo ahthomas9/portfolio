@@ -1,0 +1,263 @@
+/***********ALL***********/
+html {
+    height: 100%;
+    overflow-x: hidden;
+}
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    height: 100%;
+    background-color: rgb(56, 56, 56);
+}
+section#landing, section#social {
+    transform: none;
+    transition: none;
+    opacity: 1;
+}
+section {
+    opacity: 0;
+    transform: translate(-15em, 0%);
+    transition: transform 1s .25s ease-in-out, opacity 1s ease-in;
+}
+section.showing {
+    transform: translate(0%, 0%);
+    opacity: 1;
+}
+.title {
+    font-family: 'Monofett', cursive;
+    font-size: 55px;
+    color: rgb(224, 210, 80);
+}
+.titleTxt {
+    font-family: 'Merriweather', serif;
+    line-height: 2em;
+    color: rgb(168, 168, 168);
+}
+.name {
+    font-family: 'Bungee Shade', cursive;
+    font-size: 225%;
+    color: white;
+    padding-left: 5px;
+}
+.name2 {
+    font-family: 'Bungee Shade', cursive;
+    font-size: 25px;
+    color: white;
+    padding-left: 5px;
+}
+.barcode {
+    font-family: 'Libre Barcode 128 Text', cursive;
+}
+#secTitle {
+    position: relative;
+    left: -5%;
+    letter-spacing: 0.4em;
+}
+strong {
+    color: rgb(226, 0, 226);
+    font-size: 20px;
+}
+#resume {
+    float:right;
+    font-weight: bold;
+    color: rgb(224, 210, 80);
+}
+#resume:hover {
+    color: rgb(226, 0, 226);
+}
+img {
+    height: 85%;
+    width: 85%;
+}
+/***********#LANDING***********/
+#landing {
+    height: 100vh;
+    position: relative;
+    top: 35%;
+    left: 20%;
+    max-width: 75vw;
+    margin: 0;
+}
+@media only screen and (max-width: 500px) {
+    #landing {
+        left: 5%;
+        top: 15%;
+    }
+}
+/***********#NAVBAR***********/
+#navbar-nav a {
+    background-color: transparent;
+    display: inline-block;
+    list-style: none;
+}
+ul.brand {
+    float: left;
+}
+ul.menu {
+    float: right;
+}
+/***********#ABOUT***********/
+#about {
+    padding: 5% 10%;
+    background-color: rgb(66, 66, 66);
+}
+#aboutTxt {
+    text-align: right;
+    font-size: 15px;
+    letter-spacing: 0.15em;
+}
+#softSkills {
+    list-style: none;
+    float: left;
+    text-align: left;
+}
+#softTitle {
+    font-size: 25px;
+    color: rgb(226, 0, 226);
+    font-weight: bold;
+}
+/***********#PROJECTS***********/
+#projects {
+    height: auto;
+    padding: 5% 10%;
+    background-color: rgb(76, 76, 76);
+}
+#projCard {
+    margin: 60px 30px;
+    margin-left: 5%;
+    padding: 17px 25px;
+    min-height: 400px;
+    max-width: 375px;
+    background-color: rgb(106, 106, 106);
+    border-radius: 15%;
+    text-align: center;
+}
+#projCard:hover {
+    box-shadow: 10px 8px purple;
+}
+#projTitle {
+    padding-top: 5%;
+    font-family: 'Bungee', cursive;
+    font-weight: bold;
+    font-size: 20px;
+}
+#techs {
+    font-weight: bold;
+    color: rgb(224, 210, 80);
+}
+#projDesc {
+    padding-top: 7px;
+}
+#projLinks {
+    font-size: 20px;
+    position: absolute;
+    bottom: 3%;
+    left: 45%;
+}
+#projLinks a {
+    color: rgb(224, 210, 80);
+    text-decoration: none;
+}
+#projLinks a:hover {
+    color: purple;
+}
+/***********#CONTACT***********/
+#contact {
+    padding: 5% 10%;
+    background-color: rgb(86, 86, 86);
+}
+#conContent {
+    text-align: right;
+}
+#conTitle {
+    font-family: 'Bungee', cursive;
+    font-size: 20px;
+    padding: 10px;
+}
+input[type=text], textarea {
+    color: rgb(26, 26, 26);
+    padding-left: 15px;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    background-color: rgb(206, 206, 206);
+}
+#name {
+    width: 25%;
+}
+@media only screen and (max-width: 500px) {
+    #name {
+        width: 100%;
+    }
+}
+#mail {
+    width: 50%;
+}
+@media only screen and (max-width: 500px) {
+    #mail {
+        width: 100%;
+    }
+}
+#mailContent {
+    width: 75%;
+}
+@media only screen and (max-width: 500px) {
+    #mailContent {
+        width: 100%;
+    }
+}
+input[type=text]:hover {
+    border-color: rgb(224, 210, 80);
+}
+textarea:hover {
+    border-color: rgb(224, 210, 80);
+}
+input[type=text]:focus {
+    border-color: rgb(224, 210, 80);
+    -webkit-box-shadow: 3px 8px 6px -6px purple;
+	   -moz-box-shadow: 3px 8px 6px -6px purple;
+	        box-shadow: 3px 8px 6px -6px purple;
+}
+textarea:focus {
+    border-color: rgb(224, 210, 80);
+    -webkit-box-shadow: 3px 8px 6px -6px purple;
+	   -moz-box-shadow: 3px 8px 6px -6px purple;
+	        box-shadow: 3px 8px 6px -6px purple;
+}
+#submit {
+    background-color: purple;
+    border-style: none;
+    border-radius: 17px;
+    padding: 10px 13px;
+    margin-top: 15px;
+    font-weight: bolder;
+    transition: all 0.2s cubic-bezier(0.1, 0.7, 1.0, 0.1);
+}
+#submit:hover {
+    background-color: white;
+    color: purple;
+}
+#buttons {
+    text-align: center;
+}
+/***********#SOCIAL***********/
+.socialButtons {
+    text-align: center;
+    padding: 10px 4px;
+    position: relative;
+    left: -55px;
+}
+@media only screen and (max-width: 500px) {
+    .socialButtons {
+        left: 0;
+    }
+}
+#icons {
+    font-size: 35px;
+    text-decoration: none;
+    color: rgb(224, 210, 80);
+    letter-spacing: 0.5em;
+}
+#icons:hover {
+    color: purple;
+}
